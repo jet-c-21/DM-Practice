@@ -26,7 +26,7 @@ def modular_exponentiation_from_pseudo_verbose(b: int, n: int, m: int):
     power_bls = binary_expansion(n)
     x = 1
     power = b % m
-    print(f"x = {x}, power = {power}")
+    print(f"init => x = {x}, power = {power} \n")
     for i in range(len(power_bls) - 1, -1, -1):
         i_str = str(i).ljust(2)
         bin_str = str(power_bls[i])
@@ -45,6 +45,8 @@ def modular_exponentiation_from_pseudo_verbose(b: int, n: int, m: int):
     return x
 
 
-qq = modular_exponentiation_from_pseudo_verbose(3, 644, 645)
-# qq = modular_exponentiation_from_pseudo_verbose(3, 10, 7)
+qq = modular_exponentiation_from_pseudo_verbose(7, 644, 645)
 print(qq)
+
+# qq = modular_exponentiation_from_pseudo_verbose(3, 2003, 99)
+# print(qq)
