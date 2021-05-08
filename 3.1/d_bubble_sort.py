@@ -23,14 +23,14 @@ def bubble_sort_from_pseudo(sequence: list):
         for j in range(0, len(sequence) - 1 - i):
             if sequence[j] > sequence[j + 1]:
                 sequence[j], sequence[j + 1] = sequence[j + 1], sequence[j]
-            # print(j, end=', ')
-        # print()
+            print(j, end=', ')
+        print()
     return sequence
 
 
 x = bubble_sort_from_pseudo(seq)
 print(x)
 
-x = bubble_sort(seq)
-print(x)
-print(seq)
+# x = bubble_sort(seq)
+# print(x)
+# print(seq)
