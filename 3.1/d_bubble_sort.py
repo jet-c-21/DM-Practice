@@ -20,6 +20,7 @@ def bubble_sort(sequence: list):
 
 def bubble_sort_from_pseudo(sequence: list):
     for i in range(0, len(sequence) - 1):
+        print(f"i = {i}, j -> ", end='')
         for j in range(0, len(sequence) - 1 - i):
             if sequence[j] > sequence[j + 1]:
                 sequence[j], sequence[j + 1] = sequence[j + 1], sequence[j]
